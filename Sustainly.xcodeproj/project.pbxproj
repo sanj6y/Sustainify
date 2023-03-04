@@ -14,6 +14,9 @@
 		58B3F3E7298E295D00A8F212 /* SustainlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3F3E6298E295D00A8F212 /* SustainlyTests.swift */; };
 		58B3F3F1298E295D00A8F212 /* SustainlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3F3F0298E295D00A8F212 /* SustainlyUITests.swift */; };
 		58B3F3F3298E295D00A8F212 /* SustainlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3F3F2298E295D00A8F212 /* SustainlyUITestsLaunchTests.swift */; };
+		58B3F402298E2C1100A8F212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3F401298E2C1100A8F212 /* ViewController.swift */; };
+		58B95D1D298F640F00541896 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 58B95D1C298F640F00541896 /* Algorithms */; };
+		58B95D20298F64E900541896 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 58B95D1F298F64E900541896 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		58B3F3EC298E295D00A8F212 /* SustainlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SustainlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B3F3F0298E295D00A8F212 /* SustainlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SustainlyUITests.swift; sourceTree = "<group>"; };
 		58B3F3F2298E295D00A8F212 /* SustainlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SustainlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58B3F401298E2C1100A8F212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B95D20298F64E900541896 /* CodeScanner in Frameworks */,
+				58B95D1D298F640F00541896 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,7 @@
 			children = (
 				58B3F3D5298E295A00A8F212 /* SustainlyApp.swift */,
 				58B3F3D7298E295A00A8F212 /* ContentView.swift */,
+				58B3F401298E2C1100A8F212 /* ViewController.swift */,
 				58B3F3D9298E295C00A8F212 /* Assets.xcassets */,
 				58B3F3DB298E295C00A8F212 /* Preview Content */,
 			);
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = Sustainly;
+			packageProductDependencies = (
+				58B95D1C298F640F00541896 /* Algorithms */,
+				58B95D1F298F64E900541896 /* CodeScanner */,
+			);
 			productName = Sustainly;
 			productReference = 58B3F3D2298E295A00A8F212 /* Sustainly.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,10 @@
 				Base,
 			);
 			mainGroup = 58B3F3C9298E295A00A8F212;
+			packageReferences = (
+				58B95D1B298F640F00541896 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				58B95D1E298F64E900541896 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 58B3F3D3298E295A00A8F212 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B3F402298E2C1100A8F212 /* ViewController.swift in Sources */,
 				58B3F3D8298E295A00A8F212 /* ContentView.swift in Sources */,
 				58B3F3D6298E295A00A8F212 /* SustainlyApp.swift in Sources */,
 			);
@@ -417,8 +433,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sustainly/Preview Content\"";
+				DEVELOPMENT_TEAM = 45C3724XVX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Sustainly camera use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +463,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sustainly/Preview Content\"";
+				DEVELOPMENT_TEAM = 45C3724XVX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Sustainly camera use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +597,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58B95D1B298F640F00541896 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		58B95D1E298F64E900541896 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58B95D1C298F640F00541896 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B95D1B298F640F00541896 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		58B95D1F298F64E900541896 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B95D1E298F64E900541896 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B3F3CA298E295A00A8F212 /* Project object */;
 }
